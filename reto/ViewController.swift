@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+var impar = 0
+for n in 0...100 {
+    impar = n%2
+    
+    if n % 5 == 0{
+        print("\(n) Bingo!!!")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    if n % 2 == 0{
+        print("\(n) par!!!")
     }
-
-
+    if impar != 0{
+        print("\(n) impar!!!")
+    }
+    
+    if n > 30 && n <= 40{
+        print("\(n) Viva Swift!!!")
+    }
 }
 
